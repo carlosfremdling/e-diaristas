@@ -138,3 +138,68 @@ header {
     bottom: 18px;
     z-index: 50;
 }
+
+/* Por que Section*/
+
+.porque {
+    background-image: linear-gradient(var(--secondary), var(--primary));
+    margin-top: -90px;
+    padding: 100px 0;
+    color: #fff;
+    position: relative;
+}
+
+.porque::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 4px #FFF;
+    background-color: var(--secondary);
+    background-image: url(../img/icon-triangulo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 50%;
+    top:-25px;
+    transform: translate(50%);
+}
+
+.porque h2 {
+    margin: 0 0 30px 0;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.porque hr {
+    width: 10%;
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.porque-campos-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.porque-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.porque-item h4, .porque-item p {
+    margin: 0;
+}
+
+.porque-item div:first-child {
+    border: solid 2px #fff;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.porque-item i {
+    font-size: 40px;
+}
